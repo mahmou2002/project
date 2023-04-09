@@ -59,7 +59,9 @@ function App() {
    <div>
     <div>
     <div className='nav'> 
-         <a href='/home' className="logo" >ADMIN</a>
+    <a href='/home' className="logo" >home</a>
+         <a href='/signup' className="logo" >Signup</a>
+         <a href='/login' className="logo" >login</a>
          
            <Search  search={handelSubmit} handelsearch={handleSearch}/>
         </div>
@@ -73,7 +75,7 @@ function App() {
           <Route path="/update/:id" element={<Update  handeltoggle={handelToggle}/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/home" element={<Home name={userName} />} />
+          <Route path="/home" element={<Home name={userName} prod={product} />} />
         </Routes>
 
       </BrowserRouter>
