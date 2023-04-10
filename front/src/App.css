@@ -443,6 +443,43 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-pay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.card-pay p {
+  margin: 5px 0;
+}
+
+.name-product {
+  font-weight: bold;
+}
+
+.price-product {
+  font-weight: bold;
+  color: green;
+  font-size: 1.2em;
+}
+
+h1 {
+  text-align: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
